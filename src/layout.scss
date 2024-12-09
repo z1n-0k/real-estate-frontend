@@ -1,4 +1,4 @@
-@import "./responsive.scss";
+@use "./responsive.scss" as resp;
 
 .layout {
     height: 100vh;
@@ -7,18 +7,23 @@
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
 
 
-    @include lg {
+    @include resp.lg {
         max-width: 1280px;
     }
 
-    @include md {
+    @include resp.md {
         max-width: 768px;
     }
 
-    @include sm {
+    @include resp.sm {
         max-width: 640px;
     }
 
+    .content {
+        flex: 1;
+    }
 }

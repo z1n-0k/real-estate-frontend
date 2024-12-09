@@ -1,4 +1,4 @@
-@import "../../responsive.scss";
+@use "../../responsive.scss" as resp;
 
 nav {
     display: flex;
@@ -9,7 +9,7 @@ nav {
     a {
         transition: all 0.4s ease;
 
-        @include sm {
+        @include resp.sm {
             display: none;
         }
 
@@ -35,11 +35,11 @@ nav {
                 width: 28px;
             }
 
-            @include md {
+            @include resp.md {
                 display: none;
             }
 
-            @include sm {
+            @include resp.sm {
                 display: initial;
             }
         }
@@ -72,12 +72,12 @@ nav {
                 cursor: pointer;
             }
 
-            @include sm {
+            @include resp.sm {
                 display: inline;
             }
         }
 
-        @include md {
+        @include resp.md {
             background-color: transparent;
         }
 
@@ -100,7 +100,7 @@ nav {
                 right: 0;
             }
 
-            @include sm {
+            @include resp.sm {
                 a {
                     display: initial;
                 }
@@ -109,4 +109,3 @@ nav {
 
     }
 }
-
