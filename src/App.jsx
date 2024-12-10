@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import ListPage from "./routes/listPage/listPage";
 import Layout from "./routes/layout/layout";
+import ProfilePage from "./routes/profilePage/ProfilePage";
 
 const App = () => {
 
@@ -33,6 +34,11 @@ const App = () => {
         {
           path:"/login",
           element: <LoginPage/>
+
+        },
+        {
+          path:"/profile",
+          element: <ProfilePage />
 
         },
       ]
