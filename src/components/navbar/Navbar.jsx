@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className="nav-left">
                 <a href="/" className="logo">
                     <img src="/logo.png" alt="" />
-                    <span>Lama Estate</span>
+                    <span>Estate</span>
                 </a>
                 <a href="">Home</a>
                 <a href="">About</a>
